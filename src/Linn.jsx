@@ -16,7 +16,7 @@ function Linn({linn}) {
             <button onClick={vajutus} >Külasta linna {linn.nimi}</button>
             <span id="k"> -- {kylastusi} -- </span>
             <div className="imgWrapper">
-                <img src={linn.pilt} />
+                <img src={linn.pilt} alt={'linnapilt ' + linn.nimi} />
             </div>
         </div>
     )
