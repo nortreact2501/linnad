@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <h1>Linnad</h1>
       { 
-          linnad.map(linn =>  <Linn linn={linn} />)
+          linnad.map((linn, index) =>  <Linn key={index} linn={linn} />)
       }
     </div>
   );

@@ -5,7 +5,7 @@ function Linn({linn}) {
 
     const vajutus = (event) => {
         console.log('klikiti nupul ' + event.target.innerText)
-        setKylastusi(kylastusi + 1)
+        setKylastusi( prevValue => prevValue +1 )
         console.log(kylastusi);
     }
 
