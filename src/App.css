@@ -24,6 +24,15 @@
   color: white;
 }
 
+nav {
+  display: flex;
+  margin-left: 20px;;
+}
+
+nav div {
+  margin-right: 5px;
+}
+
 .App-link {
   color: #61dafb;
 }

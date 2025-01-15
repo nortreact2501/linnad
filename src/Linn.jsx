@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Linn({linn}) {
+function Linn({linn, jargmineLinn}) {
     const [kylastusi, setKylastusi] = useState(0)
 
     const vajutus = (event) => {
@@ -13,6 +13,7 @@ function Linn({linn}) {
         <div>
             <h1>{linn.nimi}</h1>
             <div>{linn.huvitav}</div>
+            <button onClick={jargmineLinn} >Järgmine</button>
             <button onClick={vajutus} >Külasta linna {linn.nimi}</button>
             <span id="k"> -- {kylastusi} -- </span>
             <div className="imgWrapper">
